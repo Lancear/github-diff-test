@@ -1,3 +1,3 @@
-const Dispatcher = require("./dispatcher");
+const DispatchRunner = require("./dispatch-runner");
 
-new Dispatcher().googleAds();
+new DispatchRunner().googleAds();

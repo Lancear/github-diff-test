@@ -1,4 +1,4 @@
-module.exports = class Dispatcher {
+module.exports = class DispatchRunner {
   full() {
     console.log("full logic");
   }
