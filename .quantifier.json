@@ -1,0 +1,39 @@
+{
+  "exclude": {
+    "files": [
+      "**/*.yml",
+      "**/*.yaml",
+      "**/*.json",
+      "**/*.md",
+      "**/*.lock",
+      "**/*.test.ts",
+      "**/*.fixtures.ts"
+    ],
+    "lines": {
+      "blank": true,
+      "comments": true,
+      "imports": true
+    }
+  },
+  "labels": [
+    {
+      "name": "Extra Small",
+      "maxChanges": 16
+    },
+    {
+      "name": "Small",
+      "maxChanges": 64
+    },
+    {
+      "name": "Medium",
+      "maxChanges": 256
+    },
+    {
+      "name": "Large",
+      "maxChanges": 512
+    },
+    {
+      "name": "Extra Large"
+    },
+  ],
+}
