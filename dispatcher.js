@@ -1,17 +1,23 @@
-module.exports = class Dispatcher {
+const { EventEmitter } = require('events');
+
+module.exports = class Dispatcer {
+  constructor() {
+    this.emitter = new EventEmitter();
+  }
+
   full() {
-    console.log("full logic");
+    this.emitter.emit('full');
   }
 
   partial() {
-    console.log("partial logic");
+    this.emitter.emit('partial', [1, 5, 3]);
   }
 
   googleAds() {
-    console.log("google ads logic");
+    this.emitter.emit('google-ads');
   }
 
   partialGoogleAds() {
-    console.log("partial google ads logic");
+    this.emitter.emit('partial-google-ads', [1, 5, 3]);
   }
 }
